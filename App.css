@@ -1,0 +1,146 @@
+.cabecalho {
+  background: #2e7d32;
+  color: #f1f8e9;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.conteudo {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.coluna-formulario {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.area-lista {
+  flex: 1;
+  min-width: 0;
+}
+
+.formulario {
+  background: #c8e6c9;
+  border: 2px solid #81c784;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formulario h2 {
+  margin: 0 0 8px;
+  color: #1b5e20;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 8px;
+  border: 1px solid #66bb6a;
+  border-radius: 6px;
+  font: inherit;
+  resize: vertical;
+}
+
+.mensagem-form {
+  margin: 0;
+  color: #b71c1c;
+  font-size: 0.9rem;
+}
+
+.botoes-form,
+.botoes-cartao {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b5e20;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.secundario {
+  background: #a5d6a7;
+  color: #1b5e20;
+}
+
+button.secundario:hover {
+  background: #81c784;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cartao {
+  background: #fff;
+  border-left: 6px solid #43a047;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(27, 94, 32, 0.15);
+}
+
+.cartao h3 {
+  margin: 0 0 8px;
+  color: #1b5e20;
+}
+
+.cartao-texto {
+  margin: 0 0 8px;
+  white-space: pre-line;
+}
+
+.cartao-meta {
+  color: #5d7a60;
+}
+
+.estado {
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #dcedc8;
+  margin: 0;
+}
+
+.estado.erro {
+  background: #ffcdd2;
+  color: #b71c1c;
+}
+
+@media (max-width: 720px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .coluna-formulario {
+    width: 100%;
+  }
+}
